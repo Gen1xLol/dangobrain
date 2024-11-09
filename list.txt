@@ -1,0 +1,522 @@
+Motion Blocks
+
+Block: move () steps Opcode: motion_movesteps
+
+Block: turn cw () degrees Opcode: motion_turnright
+
+Block: turn ccw () degrees Opcode: motion_turnleft
+
+Block: go to ( v) Opcode: motion_goto
+
+Block: go to x: () y: () Opcode: motion_gotoxy
+
+Block: glide () secs to ( v) Opcode: motion_glideto
+
+Block: glide () secs to x: () y: () Opcode: motion_glidesecstoxy
+
+Block: point in direction () Opcode: motion_pointindirection
+
+Block: point towards ( v) Opcode: motion_pointtowards
+
+Block: change x by () Opcode: motion_changexby
+
+Block: set x to () Opcode: motion_setx
+
+Block: change y by () Opcode: motion_changeyby
+
+Block: set y to () Opcode: motion_sety
+
+Block: if on edge, bounce Opcode: motion_ifonedgebounce
+
+Block: set rotation style [ v] Opcode: motion_setrotationstyle
+
+Block: (x position) Opcode: motion_xposition
+
+Block: (y position) Opcode: motion_yposition
+
+Block: (direction) Opcode: motion_direction
+
+Looks Blocks
+
+Block: say () for () seconds Opcode: looks_sayforsecs
+
+Block: say () Opcode: looks_say
+
+Block: think () for () seconds Opcode: looks_thinkforsecs
+
+Block: think () Opcode: looks_think
+
+Block: switch costume to ( v) Opcode: looks_switchcostumeto
+
+Block: next costume Opcode: looks_nextcostume
+
+Block: switch backdrop to ( v) Opcode: looks_switchbackdropto
+
+Block: switch backdrop to ( v) and wait Opcode: looks_switchbackdroptoandwait
+
+Block: next backdrop Opcode: looks_nextbackdrop
+
+Block: change size by () Opcode: looks_changesizeby
+
+Block: set size to ()% Opcode: looks_setsizeto
+
+Block: change [ v] effect by () Opcode: looks_changeeffectby
+
+Block: set [ v] effect to () Opcode: looks_seteffectto
+
+Block: clear graphic effects Opcode: looks_cleargraphiceffects
+
+Block: show Opcode: looks_show
+
+Block: hide Opcode: looks_hide
+
+Block: go to [ v] layer Opcode: looks_gotofrontback
+
+Block: go [ v] () layers Opcode: looks_goforwardbackwardlayers
+
+Block: costume [ v] Opcode: looks_costumenumbername
+
+Block: backdrop [ v] Opcode: looks_backdropnumbername
+
+Block: size Opcode: looks_size
+
+Sound Blocks
+
+Block: play sound ( v) until done Opcode: sound_playuntildone
+
+Block: start sound ( v) Opcode: sound_play
+
+Block: stop all sounds Opcode: sound_stopallsounds
+
+Block: change [ v] effect by ():: sound Opcode: sound_changeeffectby
+
+Block: set [ v] effect to ():: sound Opcode: sound_seteffectto
+
+Block: clear sound effects Opcode: sound_cleareffects
+
+Block: change volume by () Opcode: sound_changevolumeby
+
+Block: set volume to ()% Opcode: sound_setvolumeto
+
+Block: (volume) Opcode: sound_volume
+
+Events Blocks
+
+Block: when gf clicked Opcode: event_whenflagclicked
+
+Block: when [ v] key pressed Opcode: event_whenkeypressed
+
+Block: when this sprite clicked Opcode: event_whenthisspriteclicked
+
+Block: when stage clicked Opcode: event_whenstageclicked
+
+Block: when backdrop switches to [ v] Opcode: event_whenbackdropswitchesto
+
+Block: when [ v] > () Opcode: event_whengreaterthan
+
+Block: when I receive [ v] Opcode: event_whenbroadcastreceived
+
+Block: broadcast ( v) Opcode: event_broadcast
+
+Block: broadcast ( v) and wait Opcode: event_broadcastandwait
+
+Control Blocks
+
+Block: wait () seconds Opcode: control_wait
+
+Block: repeat () Opcode: motion_turnright
+
+Block: forever Opcode: control_forever
+
+Block: if <> then Opcode: control_if
+
+Block: if <> then else Opcode: control_if_else
+
+Block: wait until <> Opcode: control_wait_until
+
+Block: repeat until <> Opcode: control_repeat_until
+
+Block: stop [ v] Opcode: control_stop
+
+Block: when I start as a clone Opcode: control_start_as_clone
+
+Block: create clone of ( v) Opcode: control_create_clone_of
+
+Block: delete this clone Opcode: control_delete_this_clone
+
+Sensing Blocks
+
+Block: <touching ( v)?> Opcode: sensing_touchingobject
+
+Block: <touching color (#000000)?> Opcode: sensing_touchingcolor
+
+Block: color (#000000) is touching (#000000)? Opcode: sensing_coloristouchingcolor
+
+Block: (distance to ( v)) Opcode: sensing_distanceto
+
+Block: ask () and wait Opcode: sensing_askandwait
+
+Block: (answer) Opcode: sensing_answer
+
+Block: <key ( v) pressed?> Opcode: sensing_keypressed
+
+Block: <mouse down?> Opcode: sensing_mousedown
+
+Block: (mouse x) Opcode: sensing_mousex
+
+Block: (mouse y) Opcode: sensing_mousey
+
+Block: set drag mode [ v] Opcode: sensing_setdragmode
+
+Block: (loudness) Opcode: sensing_loudness
+
+Block: (timer) Opcode: sensing_timer
+
+Block: reset timer Opcode: sensing_resettimer
+
+Block: [ v] of ( v) Opcode: sensing_of
+
+Block: current [ v] Opcode: sensing_current
+
+Block: (days since 2000) Opcode: sensing_dayssince2000
+
+Block: (username) Opcode: sensing_username
+
+Operators Blocks
+
+Block: () + () Opcode: operator_add
+
+Block: () - () Opcode: operator_subtract
+
+Block: () * () Opcode: operator_multiply
+
+Block: () / () Opcode: operator_divide
+
+Block: (pick random () to ()) Opcode: operator_random
+
+Block: <()>()> Opcode: operator_gt
+
+Block: <()<()> Opcode: operator_lt
+
+Block: <()=()> Opcode: operator_equals
+
+Block: <<>and<>> Opcode: operator_and
+
+Block: <<>or<>> Opcode: operator_or
+
+Block: <not<>> Opcode: operator_not
+
+Block: (join()()) Opcode: operator_join
+
+Block: (letter () of ()) Opcode: operator_letter_of
+
+Block: (length of ()) Opcode: operator_length
+
+Block: <() contains ()?> Opcode: operator_contains
+
+Block: (()mod()) Opcode: operator_mod
+
+Block: (round()) Opcode: operator_round
+
+Block: [ v] of ()::operators Opcode: operator_mathop
+
+Variables Blocks
+
+Block: ( ::variables) Opcode: data_variable
+
+Block: set [ v] to () Opcode: data_setvariableto
+
+Block: change [ v] by () Opcode: data_changevariableby
+
+Block: show variable [ v] Opcode: data_showvariable
+
+Block: hide variable [ v] Opcode: data_hidevariable
+
+List Blocks
+
+Block: ( ::list) Opcode: data_listcontents
+
+Block: add () to [ v] Opcode: data_addtolist
+
+Block: delete () of [ v] Opcode: data_deleteoflist
+
+Block: delete all of [ v] Opcode: data_deletealloflist
+
+Block: insert () at () of [ v] Opcode: data_insertatlist
+
+Block: replace item () of [ v] with () Opcode: data_replaceitemoflist
+
+Block: (item () of [ v]) Opcode: data_itemoflist
+
+Block: (item # of () in [ v]) Opcode: data_itemnumoflist
+
+Block: (length of [ v]) Opcode: data_lengthoflist
+
+Block: <[ v] contains ()?> Opcode: data_listcontainsitem
+
+Block: show list [ v] Opcode: data_showlist
+
+Block: hide list [ v] Opcode: data_hidelist
+
+Music Extension
+
+Block: play drum ( v) for () beats
+Opcode: music_playDrumForBeats
+
+Block: rest for () beats
+Opcode: music_restForBeats
+
+Block: play note () for () beats
+Opcode: music_playNoteForBeats
+
+Block: set instrument to ( v)
+Opcode: music_setInstrument
+
+Block: set tempo to ()
+Opcode: music_setTempo
+
+Block: change tempo by ()
+Opcode: music_changeTempo
+
+Block: (tempo)
+Opcode: music_getTempo
+
+Pen Extension
+
+Block: erase all
+Opcode: pen_clear
+
+Block: stamp
+Opcode: pen_stamp
+
+Block: pen down
+Opcode: pen_penDown
+
+Block: pen up
+Opcode: pen_penUp
+
+Block: set pen color to (#000000)
+Opcode: pen_setPenColorToColor
+
+Block: change pen ( v) by ()
+Opcode: pen_changePenColorParamBy
+
+Block: set pen ( v) to ()
+Opcode: pen_setPenColorParamTo
+
+Block: change pen size by ()
+Opcode: pen_changePenSizeBy
+
+Block: set pen size to ()
+Opcode: pen_setPenSizeTo
+
+Video Sensing Extension
+
+Block: when video motion > ()
+Opcode: videoSensing_whenMotionGreaterThan
+
+Block: video ( v) on ( v)
+Opcode: videoSensing_videoOn
+
+Block: turn video ( v)
+Opcode: videoSensing_videoToggle
+
+Block: set video transparency to ()
+Opcode: videoSensing_setVideoTransparency
+
+Text to Speech Extension
+
+Block: speak ()
+Opcode: text2speech_speakAndWait
+
+Block: set voice to ( v)
+Opcode: text2speech_setVoice
+
+Block: set language to ( v)
+Opcode: text2speech_setLanguage
+
+Translate Extension
+
+Block: (translate () to ( v))
+Opcode: translate_getTranslate
+
+Block: (language)
+Opcode: translate_getViewerLanguage
+
+Makey Makey Extension
+
+Block: when ( v) key pressed:: makeymakey
+Opcode: makeymakey_whenMakeyKeyPressed
+
+Block: when ( v) pressed in order
+Opcode: makeymakey_whenCodePressed
+
+micro
+Extension
+
+Block: when ( v) button pressed
+Opcode: microbit_whenButtonPressed
+
+Block: <( v) button pressed?>
+Opcode: microbit_isButtonPressed
+
+Block: when ( v):: microbit
+Opcode: microbit_whenGesture
+
+Block: display ( v)
+Opcode: microbit_displaySymbol
+
+Block: display text ()
+Opcode: microbit_displayText
+
+Block: clear display
+Opcode: microbit_displayClear
+
+Block: when tilted ( v)
+Opcode: microbit_whenTilted
+
+Block: <tilted ( v)?>
+Opcode: microbit_isTilted
+
+Block: (tilt angle ( v))
+Opcode: microbit_getTiltAngle
+
+Block: when pin ( v) connected
+Opcode: microbit_whenPinConnected
+
+LEGO MINDSTORMS EV3 Extension
+
+Block: motor ( v) turn this way for () seconds
+Opcode: ev3_motorTurnClockwise
+
+Block: motor ( v) turn that way for () seconds
+Opcode: ev3_motorTurnCounterClockwise
+
+Block: motor ( v) set power ()%
+Opcode: ev3_motorSetPower
+
+Block: (motor ( v) position)
+Opcode: ev3_getMotorPosition
+
+Block: button ( v) pressed
+Opcode: ev3_whenButtonPressed
+
+Block: when distance < ()
+Opcode: ev3_whenDistanceLessThan
+
+Block: when brightness < ()
+Opcode: ev3_whenBrightnessLessThan
+
+Block: <button ( v) pressed?>
+Opcode: ev3_buttonPressed
+
+Block: (distance)
+Opcode: ev3_getDistance
+
+Block: (brightness)
+Opcode: ev3_getBrightness
+
+Block: beep note () for () secs
+Opcode: ev3_beep
+
+LEGO BOOST Extension
+
+Block: turn motor ( v) for () seconds
+Opcode: boost_motorOnFor
+
+Block: turn motor ( v) for () rotations
+Opcode: boost_motorOnForRotation
+
+Block: turn motor ( v) on
+Opcode: boost_motorOn
+
+Block: turn motor ( v) off
+Opcode: boost_motorOff
+
+Block: set motor ( v) speed to ()%
+Opcode: boost_setMotorPower
+
+Block: set motor ( v) direction ( v)
+Opcode: boost_setMotorDirection
+
+Block: (motor ( v) position:: boost)
+Opcode: boost_getMotorPosition
+
+Block: when ( v) brick seen
+Opcode: boost_whenColor
+
+Block: <seeing ( v) brick?>
+Opcode: boost_seeingColor
+
+Block: when tilted ( v):: boost
+Opcode: boost_whenTilted
+
+Block: (tilt angle ( v):: boost)
+Opcode: boost_getTiltAngle
+
+Block: set light color to ():: boost
+Opcode: boost_setLightHue
+
+LEGO Education WeDo 2.0 Extension
+
+Block: turn ( v) on for () seconds
+Opcode: wedo2_motorOnFor
+
+Block: turn ( v) on
+Opcode: wedo2_motorOn
+
+Block: turn ( v) off
+Opcode: wedo2_motorOff
+
+Block: set ( v) power to ()
+Opcode: wedo2_startMotorPower
+
+Block: set ( v) direction to ( v)
+Opcode: wedo2_setMotorDirection
+
+Block: set light color to ()
+Opcode: wedo2_setLightHue
+
+Block: when distance ( v) ()
+Opcode: wedo2_whenDistance
+
+Block: when tilted ( v):: wedo
+Opcode: wedo2_whenTilted
+
+Block: (distance:: wedo)
+Opcode: wedo2_getDistance
+
+Block: <tilted ( v):: wedo?>
+Opcode: wedo2_isTilted
+
+Block: (tilt angle ( v):: wedo)
+Opcode: wedo2_getTiltAngle
+
+Go Direct Force & Acceleration Extension
+
+Block: when ( v)
+Opcode: gdxfor_whenGesture
+
+Block: when force sensor ( v)
+Opcode: gdxfor_whenForcePushedOrPulled
+
+Block: (force)
+Opcode: gdxfor_getForce
+
+Block: when tilted ( v):: gdxfor
+Opcode: gdxfor_whenTilted
+
+Block: <tilted ( v)?:: gdxfor>
+Opcode: gdxfor_isTilted
+
+Block: tilt angle ( v):: gdxfor
+Opcode: gdxfor_getTilt
+
+Block: <falling?>
+Opcode: gdxfor_isFreeFalling
+
+Block: (spin speed ( v))
+Opcode: gdxfor_getSpinSpeed
+
+Block: (acceleration ( v))
+Opcode: gdxfor_getAcceleration
